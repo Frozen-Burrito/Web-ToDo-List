@@ -1,0 +1,105 @@
+html, body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(14, 17, 34);
+}
+
+h1 {
+    color: rgb(37, 37, 37);
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#container {
+    position: absolute;
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 10px;
+    padding: 2em;
+    background-color: rgb(224, 224, 224);
+}
+
+button {
+    position: absolute;
+    top: 4.5em;
+    right: 1em;
+    background-color: rgb(241, 115, 12);
+    border: none;
+    color: white;
+    padding: 20px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    border-radius: 50%;
+
+    transition: .2s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(255, 125, 19);
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 0.6em;
+    font-size: 18px;
+    border: none;
+
+    transition: .3s ease;
+}
+
+.newTask {
+    margin: 2em auto;
+}
+
+#list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+li {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    border-left: 5px solid rgb(241, 115, 12);
+    padding: 0.8em;
+    padding-left: 1em;
+    margin-bottom: 0.6em;
+
+    color: rgb(105, 105, 105);
+
+    transition: .2s ease;
+}
+
+li:hover {
+    padding: 0.8em 2em;
+    border-color: rgb(255, 125, 19);
+    cursor: pointer;
+}
+
+li.complete {
+    background-color: rgb(176, 248, 148);
+}
+
+.remove {
+    position: absolute;
+    top: 0.8em;
+    right: 1em;
+    display: inline-block;
+    color: rgb(143, 143, 143);
+    font-size: 18px;
+}
